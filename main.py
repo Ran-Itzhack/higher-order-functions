@@ -1,10 +1,10 @@
+from hof_decorator.decorator_1 import greeting, greeting_uppercase_decorator
+from hof_decorator.decorator_2 import greeting
 from hof.hof_1 import upper_text, lower_text, handle_text
 from hof.hof_2 import make_adder
 from hof.hof_3 import sum, divide, do_opr_calculator
 from hof.hof_4 import sum_numbers, higher_order_function
-from hof.hof_decorator.decorator_1 import greeting, greeting_uppercase_decorator
-
-from hof.function_as_a_return_value import hof_func_return_value, square,cube,absolute
+from hof.function_as_a_return_value import hof_func_return_value
 
 if __name__ == '__main__':
     # handle_text(lower_text)
@@ -23,7 +23,7 @@ if __name__ == '__main__':
     # print(result)
 
     # Function as a Return Value
-
+    #
     # result = hof_func_return_value('square')
     # print(result(3))  # 9
     # result = hof_func_return_value('cube')
@@ -31,5 +31,9 @@ if __name__ == '__main__':
     # result = hof_func_return_value('absolute')
     # print(result(-3))  # 3
 
-    g = greeting_uppercase_decorator(greeting)
-    print(g())  # WELCOME TO PYTHON
+    # Decorators 1
+    # g = greeting_uppercase_decorator(greeting)
+    # print(g('Welcome to Python '))  # WELCOME TO PYTHON
+
+    # Decorators 2
+    print(greeting())  # WELCOME TO PYTHON
