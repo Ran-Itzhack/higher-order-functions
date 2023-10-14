@@ -1,10 +1,14 @@
 from hof_decorator.decorator_1 import greeting, greeting_uppercase_decorator
 from hof_decorator.decorator_2 import greeting
+from hof_decorator.decorator_3 import greeting_2
 from hof.hof_1 import upper_text, lower_text, handle_text
 from hof.hof_2 import make_adder
 from hof.hof_3 import sum, divide, do_opr_calculator
 from hof.hof_4 import sum_numbers, higher_order_function
 from hof.function_as_a_return_value import hof_func_return_value
+
+# https://github.com/deeplearninghumans/50-Days-Of-Python-Data-Structure-Algorithms/blob/master/14_Day_Higher_order_functions/14_higher_order_functions.md#function-as-a-return-value
+
 
 if __name__ == '__main__':
     # handle_text(lower_text)
@@ -36,4 +40,5 @@ if __name__ == '__main__':
     # print(g('Welcome to Python '))  # WELCOME TO PYTHON
 
     # Decorators 2
-    print(greeting())  # WELCOME TO PYTHON
+    greeting_msg = 'Welcome to Python '
+    print(greeting(greeting_msg, 'xyz'))  # WELCOME TO PYTHON
