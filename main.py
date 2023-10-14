@@ -1,5 +1,5 @@
 from hof_decorator.decorator_1 import greeting, greeting_uppercase_decorator
-from hof_decorator.decorator_2 import greeting
+from hof_decorator.decorator_2 import greeting_uppercase, add
 from hof_decorator.decorator_3 import greeting_2
 from hof.hof_1 import upper_text, lower_text, handle_text
 from hof.hof_2 import make_adder
@@ -41,4 +41,5 @@ if __name__ == '__main__':
 
     # Decorators 2
     greeting_msg = 'Welcome to Python '
-    print(greeting(greeting_msg, 'xyz'))  # WELCOME TO PYTHON
+    # print(greeting_uppercase(greeting_msg))  # WELCOME TO PYTHON
+    print(add(15, 5))
